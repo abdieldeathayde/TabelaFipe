@@ -86,7 +86,10 @@
 							<artifactId>lombok</artifactId>
 						</path>
 					</annotationProcessorPaths>
-				</configuration>
+                    <source>14</source>
+                    <target>14</target>
+                    <compilerArgs>--enable-preview</compilerArgs>
+                </configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.springframework.boot</groupId>

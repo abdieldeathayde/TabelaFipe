@@ -22,9 +22,7 @@ public class TabelaFipeVeiculo {
 
     private String anoModelo;
 
-    private String autenticacao;
-
-    private String dataConsulta;
+    private LocalDateTime dataConsulta;
 
     private String precoMedio;
 
@@ -68,19 +66,11 @@ public class TabelaFipeVeiculo {
         this.anoModelo = anoModelo;
     }
 
-    public String getAutenticacao() {
-        return autenticacao;
-    }
-
-    public void setAutenticacao(String autenticacao) {
-        this.autenticacao = autenticacao;
-    }
-
-    public String getDataConsulta() {
+    public LocalDateTime getDataConsulta() {
         return dataConsulta;
     }
 
-    public void setDataConsulta(String dataConsulta) {
+    public void setDataConsulta(LocalDateTime dataConsulta) {
         this.dataConsulta = dataConsulta;
     }
 
@@ -96,11 +86,17 @@ public class TabelaFipeVeiculo {
         return id;
     }
 
+
+
+    private LocalDateTime dataRegistro = LocalDateTime.now();
+
     public LocalDateTime getDataRegistro() {
         return dataRegistro;
     }
 
-    private LocalDateTime dataRegistro = LocalDateTime.now();
+    public void setDataRegistro(LocalDateTime now) {
+        this.dataRegistro = dataRegistro;
+    }
 
     // Getters e Setters
 }
